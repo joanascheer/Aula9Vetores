@@ -6,18 +6,32 @@ public class Exercicio3Vetor {
         Scanner leitor = new Scanner(System.in);
         int vetor[] = new int [10];
 
+        // for (int i = 0; i < vetor.length; i++) {
+        //     System.out.println("Digite o número que ocupará a posição " +i+ " do vetor: ");
+        //     int numero = leitor.nextInt();
+
+        //     if (numero % 2 == 0) {
+        //         vetor[i] = numero;
+        //     }
+        // }
+
+        // for (int i = 0; i < vetor.length; i++) {
+        //     System.out.println("Números pares: " +vetor[i]);
+        // }
+
         for (int i = 0; i < vetor.length; i++) {
             System.out.println("Digite o número que ocupará a posição " +i+ " do vetor: ");
             int numero = leitor.nextInt();
-
-            if (numero % 2 == 0) {
-                vetor[i] = numero;
-            }
+            vetor[i] = numero;
         }
 
         for (int i = 0; i < vetor.length; i++) {
-            System.out.println("Números pares: " +vetor[i]);
+            if (vetor[i] % 2 == 0) {
+                System.out.println("O número " + vetor[i]+ " é par e está na posição " +i);
+            } 
         }
+
+
     }
     
 }
